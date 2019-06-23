@@ -1,6 +1,6 @@
 /target
 **/*.rs.bk
 
-output.ppm
-output.png
-render-images
+/output.ppm
+/output.png
+/render-images
