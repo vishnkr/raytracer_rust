@@ -1,7 +1,7 @@
 use super::vector::Vec3;
 use std::f32;
 
-#[derive(Debug)]
+#[derive(Debug,Copy,Clone)]
 pub struct Ray{
     origin: Vec3,
     direction: Vec3,

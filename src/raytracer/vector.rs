@@ -166,3 +166,15 @@ impl ops::DivAssign<f32> for Vec3{
         self.e[0]/=other; self.e[1]/=other; self.e[2]/=other;
     }
 }
+
+impl std::ops::Neg for Vec3{
+     type Output = Vec3;
+
+      fn neg(self) -> Vec3{
+         Vec3::new(
+             -self.e[0],
+             -self.e[1],
+             -self.e[2]
+         )
+     }
+ }
